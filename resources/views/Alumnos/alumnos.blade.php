@@ -1,10 +1,12 @@
 @extends('master')
 
 @section('contenido')
-    <h1>Listado de alumnos</h1><hr>
+    <h1>Listado de alumnos
+        
+    </h1><hr>
     <a href="{{ url('/alumno/registrar') }}" class="btn btn-secondary">Registrar Alumno</a><br><br>
     <table class="table">
-    <thead>
+    <thead class="thead-dark">
         <th >ID</th>
         <th>No. Control</th>
         <th>Nombre</th>

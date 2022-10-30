@@ -28,10 +28,7 @@
             Más Opciones
           </a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
             <a class="dropdown-item" href="{{url('/alumno/registrar')}}">Registrar</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
           </div>
         </li>
         <li class="nav-item">
