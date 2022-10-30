@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Alumno extends Model
 {
     protected $table = 'alumnos';
+
+    protected $fillable = [
+        'n_control',
+        'nombre',
+        'edad',
+        'sexo',
+        'fecha_nacimiento',
+        'domicilio',
+        'telefono'
+    ];
 }
