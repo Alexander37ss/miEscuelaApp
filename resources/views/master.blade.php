@@ -20,19 +20,24 @@
         <li class="nav-item active">
           <a class="nav-link" href="{{url('/')}}">Inicio <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{url('/alumnos')}}">Consultar</a>
-        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-            Más Opciones
+            Alumnos
           </a>
           <div class="dropdown-menu">
             <a class="dropdown-item" href="{{url('/alumno/registrar')}}">Registrar</a>
+            <a class="dropdown-item" href="{{url('/alumnos')}}">Consultar</a>
           </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Proximamente</a>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Grupos
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="{{url('/especialidades/registrar')}}">Registrar</a>
+            <a class="dropdown-item" href="{{url('/especialidades')}}">Consultar</a>
+          </div>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">

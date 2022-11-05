@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('contenido')
-<h1>Editar Datos</h1><hr>
+<h1>Editar datos de alumnos</h1><hr>
     <form action="{{ url('/alumno/actualizar')}}/{{$alumno->id}}" method="POST">
         @csrf
         <div class="form-group">
