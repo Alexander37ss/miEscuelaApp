@@ -30,7 +30,7 @@
             <td>{{ $a->Telefono }}</td>
             <td>
                 <a href="" class="btn btn-primary btn-sm">Editar</a>
-                <a href="" class="btn btn-danger btn-sm">Eliminar</a>
+                <a href="{{url('/alumno/eliminar')}}/{{$a->id}}" class="btn btn-danger btn-sm">Eliminar</a>
             </td>
         </tr>
         @endforeach
@@ -40,3 +40,8 @@
         {{$alumnos->links()}}
     </div>
 @stop
+<style>
+    div nav ul{
+        justify-content: center;
+    }
+</style>
