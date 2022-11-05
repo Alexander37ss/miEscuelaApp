@@ -6,6 +6,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Database\Seeders\AlumnoSeeder;
 use Database\Seeders\EspecialidadSeeder;
+use Database\Seeders\GruposSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -18,7 +19,8 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             AlumnoSeeder::class,
-            EspecialidadSeeder::class
+            EspecialidadSeeder::class,
+            GruposSeeder::class
         ]);
     }
 }

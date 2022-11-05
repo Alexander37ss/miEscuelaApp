@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\grupos;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -14,25 +15,29 @@ class GruposSeeder extends Seeder
      */
     public function run()
     {
-        Grupo::create([
+        grupos::create([
+            'especialidad_id' => 2,
             'clave' => '5AVP',
             'turno' => 1,
             'semestre' => 5,
             'descripcion' => 'Grupo de programacion vespertino'
         ]);
-        Grupo::create([
+        grupos::create([
+            'especialidad_id' => 3,
             'clave' => '1AMP',
             'turno' => 0,
             'semestre' => 1,
             'descripcion' => 'Grupo de programacion matutino'
         ]);
-        Grupo::create([
+        grupos::create([
+            'especialidad_id' => 5,
             'clave' => '3AMO',
             'turno' => 0,
             'semestre' => 3,
-            'descripcion' => 'Grupo de programacion matutino'
+            'descripcion' => 'Grupo de ofimatica matutino'
         ]);
-        Grupo::create([
+        grupos::create([
+            'especialidad_id' => 4,
             'clave' => '5AVC',
             'turno' => 1,
             'semestre' => 5,
