@@ -32,18 +32,31 @@
         
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-            Grupos
+            Especialidades
           </a>
           <div class="dropdown-menu">
             <a class="dropdown-item" href="{{url('/especialidades/registrar')}}">Registrar</a>
             <a class="dropdown-item" href="{{url('/especialidades')}}">Consultar</a>
           </div>
         </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Qué quieres aprender?" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-      </form>
+        </ul>
+        <li class="nav-item dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+          {{Auth::user()->name }}
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="{{url('/profile')}}">Perfil</a>
+            <form method="POST" action="{{ route('logout') }}">
+              @csrf
+              <a class="dropdown-item" href="{{ url('logout') }}"
+                  onclick="event.preventDefault();
+                  this.closest('form').submit();">
+                  {{__('Cerrar sesión')}}
+              </a>
+            </form>
+
+          </div>
+        </li>
     </div>
   </nav>
 
